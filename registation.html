@@ -7,72 +7,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registation</title>
 </head>
-<table border="1" width="980" align="center">
-    <!-- Start 1 row -->
-    <tr>
-        <td>
-            <table width="980" border="1">
-                <tr>
-                    <td height="100" width="200">
-                        <img src="image/logo1.jpg" alt="Logo" height="100" width="200" />
-                    </td>
-                    <td width="780">
-                        <img src="image/baner.png" alt="Banner" height="100" width="750" />
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <!-- End 1 row -->
-
-    <!-- Start 2 row -->
-    <tr>
-        <td>
-            <table border="1" width="980">
-                <tr align="center">
-                    <td height="40"><a href="index.html">Home</a></td>
-                    <td><a href="gallery.html">Gallery</a></td>
-                    <td><a href="protfolio.html">Protfolio</a></td>
-                    <td><a href="abou.html">About</a></td>
-                    <td><a href="contact.html">Contact</a></td>
-                    <td><a href="registation.html">Registation</a></td>
-                </tr>
-
-            </table>
-        </td>
-    </tr>
-    <!-- End 2 row -->
-
-
-    <!-- Start 3 row -->
-    <tr>
-        <td>
-            <table border="1" width="980">
-                <tr>
-                    <td width="200" height="600"></td>
-                    <td width="780"></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <!-- End 3 row -->
-
-    <!-- Start 4 row -->
-    <tr>
-        <td>
-            <table border="1" width="980">
-                <tr align="center">
-                    <td height="50">
-                        <h3>Made by <a href="">Nahid</a></h3>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <!-- End 4 row -->
-</table>
 
 <body>
+
+
+    <table border="1" width="980" align="center">
+        <!-- Start 1 row -->
+        <tr>
+            <td>
+                <table width="980" border="1">
+                    <tr>
+                        <td height="100" width="200">
+                            <img src="image/logo1.jpg" alt="Logo" height="100" width="200" />
+                        </td>
+                        <td width="780">
+                            <img src="image/baner.png" alt="Banner" height="100" width="750" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- End 1 row -->
+
+        <!-- Start 2 row -->
+        <tr>
+            <td>
+                <table border="1" width="980">
+                    <tr align="center">
+                        <td height="40"><a href="index.html">Home</a></td>
+                        <td><a href="gallery.html">Gallery</a></td>
+                        <td><a href="protfolio.html">Protfolio</a></td>
+                        <td><a href="abou.html">About</a></td>
+                        <td><a href="contact.html">Contact</a></td>
+                        <td><a href="registation.html">Registation</a></td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <!-- End 2 row -->
+
+
+        <!-- Start 3 row -->
+        <tr>
+            <td>
+                <table border="1" width="980">
+                    <tr valign="top">
+                        <td width="200" height="600"></td>
+                        <td width="780">
+                            <h1 align="center">Registation Form</h1>
+                            <hr>
+                            <table>
+                                <tr>
+                                    <th align="left">First Name</th>
+                                    <td><input type="text" name="first_name" placeholder="Your First Name" maxlength="20" size="50" /></td>
+                                </tr>
+                                <tr>
+                                    <th align="left">Last Name</th>
+                                    <td><input type="text" name="last_name" placeholder="Your Last Name" maxlength="20" size="50" /></td>
+                                </tr>
+
+                                <tr>
+                                    <th align="left">Email</th>
+                                    <td><input type="email" name="email" placeholder="Your Email" maxlength="20" size="50" /></td>
+                                </tr>
+
+                                <tr>
+                                    <th align="left">Password</th>
+                                    <td><input type="password" name="password" placeholder="Your Password" maxlength="10" size="50" /></td>
+                                </tr>
+                                <tr>
+                                    <th align="left">Phone Number</th>
+                                    <td><input type="number" name="phone_number" placeholder="Your Phone Number" maxlength="11" size="50" /></td>
+                                </tr>
+                                <tr>
+                                    <th align="left">Date of Birth</th>
+                                    <td><input type="date" name="date_of_birth" /></td>
+                                </tr>
+                                <tr>
+                                    <th align="left">Address</th>
+                                    <td><textarea name="address" cols="40" rows="5" placeholder="Your First Name" maxlength="200"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th align="left">Distreict Name</th>
+                                    <td>
+                                        <select name="district_name" id="">
+                                <option disabled selected>Select district name</option>
+                                <optgroup label="Dhaka">
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Faridpur">Faridpur</option>
+                                    <option value="Gazipur">Gazipur</option>
+                                    <option value="Gopalganj">Gopalganj</option>
+                                    <option value="Jamalpur">Jamalpur</option>
+                                    <option value="Kishoreganj">Kishoreganj</option>
+                                    <option value="Madaripur">Madaripur</option>
+
+                                </optgroup>
+                            </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th align="left">Country</th>
+                                    <td><input type="text" name="countryname" list="country"></td>
+                                </tr>
+                                <tr>
+                                    <th align="left">Gender Information</th>
+                                    <td><input type="radio" name="gender" value="male">Male
+                                        <input type="radio" name="gender" value="female">Female
+                                        <input type="radio" name="gender" value="other">Other</td>
+                                </tr>
+                                <tr>
+                                    <th align="left">Image</th>
+                                    <td>
+                                        <input type="file" accept="image/*" name="image">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th align="left">Subject Name</th>
+                                    <td>
+                                        <label><input type="checkbox" name="subject" value="Bangla"> Introduction to Computer Science</label>
+                                        <label><input type="checkbox" name="subject" value="English">Programming Language </label>
+                                        <label><input type="checkbox" name="subject" value="Math">Data Structures</label>
+                                        <label><input type="checkbox" name="subject" value="Chemistry">Algorithms</label>
+                                        <label><input type="checkbox" name="subject" value="Physics">Discrete Mathematics</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <input type="submit" name="btn" value="Resgistation">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" height="40"></td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+        <!-- End 3 row -->
+
+        <!-- Start 4 row -->
+        <tr>
+            <td>
+                <table border="1" width="980">
+                    <tr align="center">
+                        <td height="50">
+                            <h3>Made by <a href="">Nahid</a></h3>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- End 4 row -->
+    </table>
+
+    <datalist id="country">
+    <option value="Banglades"/>
+    <option value="Algeria"/>
+    <option value="Andorra"/>
+    <option value="Angola"/>
+    <option value="Antigua and Barbuda"/>
+    <option value="Afghanistan"/>
+    <option value="China"/>
+</datalist>
 
 </body>
 
